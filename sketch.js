@@ -18,6 +18,7 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
   Engine.run(engine);
+
   
   ground = new Ground();
   stand1 = new Stand(390,300,250,10);
@@ -73,9 +74,9 @@ function draw() {
   // write image() to display the polygon image 
   //use the same x and y position as ball
 
+image(rock_img, ball.position.x, ball.position.y, 40, 40)
 
-ball.position.x = 100
-ball.position.y = 30
+
 
   stroke(0,0,0);
   fill("white");
@@ -127,7 +128,7 @@ ball.position.y = 30
 
   
   slingShot.display();
-  ball.display();
+  
 }
 function mouseDragged(){
   Matter.Body.setPosition(this.ball,{x:mouseX,y:mouseY});

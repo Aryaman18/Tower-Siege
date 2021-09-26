@@ -4,7 +4,7 @@ class Block{
             restitution :0.4,
             friction :0.0,
             // set the isStatic property 
-            isStatic : true
+            isStatic : false
         }
         
         this.body = Bodies.rectangle(x, y, width, height, options);
