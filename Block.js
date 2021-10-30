@@ -4,8 +4,9 @@ class Block{
             restitution :0.4,
             friction :0.0,
             isStatic : false
+
         }
-        
+        this.visibility = 255
         this.body = Bodies.rectangle(x, y, width, height, options);
         this.width = width;
         this.height = height;
@@ -30,10 +31,9 @@ class Block{
           
           push();
           
-          this.visiblity = 255;
-          this.visiblity = this.visiblity - 5;
-          this.visiblity = this.x;
-          this.visiblity = this.body.position.x;
+          this.Visiblity = this.Visiblity - 5;
+          this.Visiblity = this.x 
+          this.Visiblity = this.body.position.x
         
           
           
